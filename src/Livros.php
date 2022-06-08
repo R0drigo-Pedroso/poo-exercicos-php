@@ -4,12 +4,11 @@ class Livros {
         private string $autor;
         private int $paginas=0;
 
-        public function getTitulo(): string
-        {
+        public function getTitulo():string {
                 return $this->titulo;
         }
 
-        public function setTitulo(string $titulo):self{
+        public function setTitulo(string $titulo):self {
                 $this->titulo = $titulo;
                 return $this;
         }
