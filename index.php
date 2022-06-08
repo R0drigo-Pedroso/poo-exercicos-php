@@ -19,16 +19,16 @@
     $livros = new Livros;
 
     //Atribuir valores
-    $livros->titulo = 'PHP com orientação a objetos';
-    $livros->autor = 'José da Silva';
-    $livros->paginas = 300;
+    $livros->setTitulo('PHP com orientação a objetos');
+    $livros->setAutor('José da Silva');
+    $livros->setPaginas(300);
 ?>
 
     <h2>Livros (Leitura)</h2>
 
-    <h3>Titulo: <?=$livros->titulo?></h3>
-        <p>Autor: <?=$livros->autor?></p>
-        <p>Páginas: <?=$livros->paginas?></p>
+    <h3>Titulo: <?=$livros->getTitulo()?></h3>
+        <p>Autor: <?=$livros->getAutor()?></p>
+        <p>Páginas: <?=$livros->getPaginas()?></p>
 
 
 </body>

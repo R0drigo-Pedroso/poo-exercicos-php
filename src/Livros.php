@@ -1,12 +1,30 @@
 <?php
 class Livros {
-        public string $titulo;
-        public string $autor;
-        public int $paginas=0;
+        private string $titulo;
+        private string $autor;
+        private int $paginas=0;
     
-        public function exibirLivros() {
-            echo "Título: {$this->titulo}<br>";
-            echo "Autor: {$this->autor}<br>";
-            echo "Páginas: {$this->paginas}<br>";
+        public function getTitulo() {
+            return $this->titulo;
+        }
+
+        public function setTitulo($titulo) {
+            $this->titulo = $titulo;
+        }
+
+        public function getAutor() {
+            return $this->autor;
+        }
+
+        public function setAutor($autor) {
+            $this->autor = $autor;
+        }
+
+        public function getPaginas() {
+            return $this->paginas;
+        }
+
+        public function setPaginas($paginas) {
+            $this->paginas = $paginas;
         }
     }
