@@ -16,10 +16,9 @@
     require_once 'src/Livros.php';
 
     //Criar um objeto
-    $livro = new Livros;
+    $livros = new Livros('PHP Básico', 'José da Silva', 200);
 ?>
 
-<pre><?=var_dump($livro)?></pre>
-
+<pre><?=var_dump($livros)?></pre>
 </body>
 </html>
