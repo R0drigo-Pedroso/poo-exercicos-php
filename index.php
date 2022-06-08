@@ -16,9 +16,20 @@
     require_once 'src/Livros.php';
 
     //Criar um objeto
-    $livros = new Livros('PHP Básico', 'José da Silva', 200);
+    $livros = new Livros;
+
+    //Atribuir valores
+    $livros->titulo = 'PHP com orientação a objetos';
+    $livros->autor = 'José da Silva';
+    $livros->paginas = 300;
 ?>
 
-<pre><?=var_dump($livros)?></pre>
+    <h2>Livros (Leitura)</h2>
+
+    <h3>Titulo: <?=$livros->titulo?></h3>
+        <p>Autor: <?=$livros->autor?></p>
+        <p>Páginas: <?=$livros->paginas?></p>
+
+
 </body>
 </html>
