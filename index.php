@@ -13,22 +13,21 @@
 
 
 <?php
-    require_once 'src/Livros.php';
+   require_once 'src/Tecnico.php';
 
-    //Criar um objeto
-    $livros = new Livros;
+   $tecnico = new Tecnico;
 
-    //Atribuir valores
-    $livros->setTitulo('PHP com orientação a objetos');
-    $livros->setAutor('José da Silva');
-    $livros->setPaginas(300);
+    // Atribuindo valores aos atributos
+    $tecnico->setTitulo("PHP 7");
+    $tecnico->setAutor("José da Silva");
+    $tecnico->setFormato(["digital", "fisico"]);
 ?>
-
-    <h2>Livros (Leitura)</h2>
-
-    <h3>Titulo: <?=$livros->getTitulo()?></h3>
-        <p>Autor: <?=$livros->getAutor()?></p>
-        <p>Páginas: <?=$livros->getPaginas()?></p>
+ 
+<ul>
+    <li>Título: <?= $tecnico->getTitulo() ?></li>
+    <li>Autor: <?= $tecnico->getAutor() ?></li>
+    <li>Formato: <?= $tecnico->getFormato()?></li>
+</ul>
 
 
 </body>
