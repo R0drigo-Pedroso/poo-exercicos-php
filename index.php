@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
     <title>Livros - Biblioteca</title>
 </head>
 <body>
@@ -30,45 +33,47 @@
     $programacao->setTitulo("PHP 7");
     $programacao->setAutor("José da Silva");
     $programacao->setFormato(["digital", "fisico"]);
-    $programacao->setArea("programacao");
+    $programacao->setArea("Tecnologia");
 
     // Imprimindo os valores dos atributos
     $didatico->setTitulo("PHP 7");
     $didatico->setAutor("José da Silva");
     $didatico->setFormato(["digital", "fisico"]);
-    $didatico->setDisciplina("Intermediario");
+    $didatico->setDisciplina("Aprendendo PHP");
+    $didatico->setNivel(["Intermediário"]);
+
     
 ?>
+<section>
+    <div>
+        <h2>Tecnico</h2>
+        <ul>
+            <li>Título: <?= $tecnico->getTitulo() ?></li>
+            <li>Autor: <?= $tecnico->getAutor() ?></li>
+            <li>Formato: <?= $tecnico->getFormato()?></li>
+        </ul>
+    </div>
 
-<div>
-    <h2>Tecnico</h2>
-    <ul>
-        <li>Título: <?= $tecnico->getTitulo() ?></li>
-        <li>Autor: <?= $tecnico->getAutor() ?></li>
-        <li>Formato: <?= $tecnico->getFormato()?></li>
-    </ul>
-</div>
+    <div>
+        <h2>Programação</h2>
+        <ul>
+            <li>Título: <?= $programacao->getTitulo() ?></li>
+            <li>Autor: <?= $programacao->getAutor() ?></li>
+            <li>Formato: <?= $programacao->getFormato()?></li>
+            <li>Área: <?= $programacao->getArea()?></li>
+        </ul>
+    </div>
 
-<div>
-    <h2>Programação</h2>
-    <ul>
-        <li>Título: <?= $programacao->getTitulo() ?></li>
-        <li>Autor: <?= $programacao->getAutor() ?></li>
-        <li>Formato: <?= $programacao->getFormato()?></li>
-        <li>Área: <?= $programacao->getArea()?></li>
-    </ul>
-</div>
-
-<div>
-    <h2>Didático</h2>
-    <ul>
-        <li>Título: <?= $didatico->getTitulo() ?></li>
-        <li>Autor: <?= $didatico->getAutor() ?></li>
-        <li>Formato: <?= $didatico->getFormato()?></li>
-        <li>Área: <?= $programacao->getArea()?></li>
-        <li>Disciplina: <?= $didatico->getDisciplina()?></li>
-    </ul>
-</div>
-
+    <div>
+        <h2>Didático</h2>
+        <ul>
+            <li>Título: <?= $didatico->getTitulo() ?></li>
+            <li>Autor: <?= $didatico->getAutor() ?></li>
+            <li>Formato: <?= $didatico->getFormato()?></li>
+            <li>Disciplina: <?= $didatico->getDisciplina()?></li>
+            <li>Nível: <?= $didatico->getNivel()?></li>
+        </ul>
+    </div>
+</section>
 </body>
 </html>

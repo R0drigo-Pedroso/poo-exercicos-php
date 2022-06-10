@@ -1,5 +1,6 @@
 <?php
 
+require_once 'Programacao.php';
 require_once 'Tecnico.php';
 
 class Didatico extends Tecnico {
