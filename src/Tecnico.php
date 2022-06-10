@@ -6,7 +6,7 @@ class Tecnico extends Livros {
     private array $formato = ["digital", "fisico"];
 
     public function getFormato(): string {
-        return "<li>". implode (',', $this->formato). "</li>";
+        return implode (',', $this->formato);
     }
 
     public function setFormato(array $formato): self{
