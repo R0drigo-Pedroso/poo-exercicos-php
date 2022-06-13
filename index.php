@@ -28,11 +28,12 @@
     $tecnico->setTitulo("PHP 7");
     $tecnico->setAutor("José da Silva");
     $tecnico->setFormato(["digital", "fisico"]);
+    $tecnico->setPaginas(200);
 
     // Imprimindo os valores dos atributos
-    $programacao->setTitulo("PHP 7");
-    $programacao->setAutor("José da Silva");
-    $programacao->setFormato(["digital", "fisico"]);
+    $programacao->setTitulo("Desenvolvimento Web");
+    $programacao->setAutor("Paulo Silveira");
+    $programacao->setFormato(["fisico"]);
     $programacao->setArea("Tecnologia");
 
     // Imprimindo os valores dos atributos
@@ -51,6 +52,7 @@
             <li>Título: <?= $tecnico->getTitulo() ?></li>
             <li>Autor: <?= $tecnico->getAutor() ?></li>
             <li>Formato: <?= $tecnico->getFormato()?></li>
+            <li>Páginas: <?= $tecnico->getPaginas() ?></li>
         </ul>
     </div>
 
@@ -71,7 +73,15 @@
             <li>Autor: <?= $didatico->getAutor() ?></li>
             <li>Formato: <?= $didatico->getFormato()?></li>
             <li>Disciplina: <?= $didatico->getDisciplina()?></li>
-            <li>Nível: <?= $didatico->getNivel()?></li>
+            
+            <?php foreach ($Didatico->getNivel() as $nivel){?>
+                <li>Nível: <?=$nivel?></li>
+            <?php } ?>
+
+            <?php foreach ($Didatico->getNivel("") as $nivel){?>
+                <li>Nível: <?=$nivel?></li>
+            <?php } ?>
+        
         </ul>
     </div>
 </section>
