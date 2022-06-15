@@ -1,4 +1,4 @@
-/* section {
+section {
     display: flex;
     justify-content: space-around;
 }
@@ -22,5 +22,10 @@ div li {
     align-items: center;
     padding: 10px;
     font-size: 1.5rem;
-    color: #fff;
-} */
+    /* color: #fff; */
+}
+
+.blue {
+    background-color: #000033 !important;
+    color: blue !important;
+}

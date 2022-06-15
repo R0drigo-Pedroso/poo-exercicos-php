@@ -14,4 +14,8 @@ class Programacao extends Tecnico {
 
         return $this;
     }
+
+    public function formataTitulo() {
+        echo "<b>". mb_strtoupper($this->getTitulo()) . "</b>";
+    }
 }
