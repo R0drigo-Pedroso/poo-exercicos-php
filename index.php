@@ -36,6 +36,8 @@
     $programacao->setFormato(["fisico"]);
     $programacao->setArea("Tecnologia");
 
+
+
     // Imprimindo os valores dos atributos
     $didatico->setTitulo("PHP 7");
     $didatico->setAutor("José da Silva");

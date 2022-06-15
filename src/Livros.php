@@ -32,4 +32,9 @@ abstract class Livros {
 
                 return $this;
         }
+
+        public function formataTitulo() {
+              echo "<b>". mb_strtoupper($this->getTitulo()) . "</b>";
+        }
+
     }
