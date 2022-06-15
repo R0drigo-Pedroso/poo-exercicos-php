@@ -4,7 +4,6 @@ section {
 }
 
 div {
-    background-color: #000033;
     width: 100%;
     margin: 10px;
 }
@@ -23,9 +22,4 @@ div li {
     padding: 10px;
     font-size: 1.5rem;
     /* color: #fff; */
-}
-
-.blue {
-    background-color: #000033 !important;
-    color: blue !important;
 }

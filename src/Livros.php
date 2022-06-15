@@ -1,8 +1,13 @@
 <?php
 abstract class Livros {
+        // chama metado
         private string $titulo;
         private string $autor;
         private int $paginas=0;
+
+        public function formataTitulo() {
+                echo "<b>". mb_strtoupper($this->getTitulo()) . "</b>";
+          }
 
         public function getTitulo():string {
                 return $this->titulo;
@@ -31,10 +36,6 @@ abstract class Livros {
                 $this->paginas = $paginas;
 
                 return $this;
-        }
-
-        public function formataTitulo() {
-              echo "<b>". mb_strtoupper($this->getTitulo()) . "</b>";
         }
 
     }

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- <link rel="stylesheet" href="css/estilo.css"> -->
+        <link rel="stylesheet" href="css/estilo.css">
 
         <title>Livros - Biblioteca</title>
     </head>
@@ -20,9 +20,9 @@
         require_once 'src/Programacao.php';
         require_once 'src/Didatico.php';
 
-        $tecnico = new Tecnico;
-        $programacao = new Programacao;
-        $didatico = new Didatico;
+            $tecnico = new Tecnico;
+            $programacao = new Programacao;
+            $didatico = new Didatico;
 
             // Atribuindo valores aos atributos
             $tecnico->setTitulo("PHP 7");
@@ -65,7 +65,7 @@
                     <li>Autor: <?= $programacao->getAutor() ?></li>
                     <li>Formato: <?= $programacao->getFormato()?></li>
                     <li>Área: <?= $programacao->getArea()?></li>
-                    <li class="blue">Formata Titulo:<em> <?= $programacao->formataTitulo()?></em></li>
+                    <li>Formata Titulo:<em style="color: blue"> <?= $programacao->formataTitulo()?></em></li>
                 </ul>
             </div>
 
@@ -79,6 +79,25 @@
 
                 </ul>
             </div>
+
+            <hr>
+
+                <h3>Correção</h3>
+
+                <p>Técnico
+                    <?=$Tecnico->formataTitulo($tecnico->getTitulo())?>
+                </p>
+
+                <p>Programação
+                    <?=$Programacao->formataTitulo($programacao->getTitulo())?>
+                </p>
+
+                <p>Didático
+                    <?=$didatico->formataTitulo($didatico->getTitulo())?>
+                </p>
         </section>
+
+       
+
     </body>
 </html>
