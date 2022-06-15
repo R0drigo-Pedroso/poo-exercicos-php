@@ -65,7 +65,6 @@
                     <li>Autor: <?= $programacao->getAutor() ?></li>
                     <li>Formato: <?= $programacao->getFormato()?></li>
                     <li>Área: <?= $programacao->getArea()?></li>
-                    <li>Formata Titulo:<em style="color: blue"> <?= $programacao->formataTitulo()?></em></li>
                 </ul>
             </div>
 
@@ -80,21 +79,14 @@
                 </ul>
             </div>
 
-            <hr>
-
-                <h3>Correção</h3>
-
-                <p>Técnico
-                    <?=$Tecnico->formataTitulo($tecnico->getTitulo())?>
-                </p>
-
-                <p>Programação
-                    <?=$Programacao->formataTitulo($programacao->getTitulo())?>
-                </p>
-
-                <p>Didático
-                    <?=$didatico->formataTitulo($didatico->getTitulo())?>
-                </p>
+            <!-- Modo mais simples de fazer polimorfismo -->
+            <div>
+                <ul>
+                    <li>Formata Titulo:<em style="color: blue"> <?= $programacao->formataTitulo()?></em></li>
+                    <li>Formata Titulo:<em style="color: blue"> <?= $didatico->formataTitulo()?></em></li>
+                    <li>Formata Titulo:<em style="color: blue"> <?= $tecnico->formataTitulo()?></em></li>
+                </ul>
+            </div>
         </section>
 
        

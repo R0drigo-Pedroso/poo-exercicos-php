@@ -5,6 +5,10 @@ require_once 'Tecnico.php';
 class Programacao extends Tecnico {
     private string $area = "programacao";
     
+    public function formataTitulo() {
+        echo "<b>". mb_strtoupper($this->getTitulo()) . "</b>";
+    }
+
     public function getArea(): string {
         return $this->area;
     }
@@ -13,9 +17,5 @@ class Programacao extends Tecnico {
         $this->area = $area;
 
         return $this;
-    }
-
-    public function formataTitulo() {
-        echo "<b>". mb_strtoupper($this->getTitulo()) . "</b>";
     }
 }
