@@ -1,4 +1,6 @@
 <?php
+
+namespace Biblioteca;
 abstract class Livros {
         // chama metado
         private string $titulo;

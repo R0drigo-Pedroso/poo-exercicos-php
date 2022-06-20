@@ -1,4 +1,5 @@
 <?php
+namespace Biblioteca;
 
 require_once 'Livros.php';
 

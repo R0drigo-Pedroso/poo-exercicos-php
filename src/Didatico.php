@@ -1,8 +1,9 @@
 <?php
 
+namespace Biblioteca;
+
 require_once 'Programacao.php';
 require_once 'Tecnico.php';
-
 class Didatico extends Tecnico {
     private string $disciplina = "didatico";
     private array $nivel = ["Básico", "Intermediário", "Avançado"];

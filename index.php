@@ -20,9 +20,9 @@
         require_once 'src/Programacao.php';
         require_once 'src/Didatico.php';
 
-            $tecnico = new Tecnico;
-            $programacao = new Programacao;
-            $didatico = new Didatico;
+            $tecnico = new Biblioteca\Tecnico();
+            $programacao = new Biblioteca\Programacao();
+            $didatico = new Biblioteca\Didatico();
 
             // Atribuindo valores aos atributos
             $tecnico->setTitulo("PHP 7");
