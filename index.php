@@ -25,6 +25,7 @@
             $tecnico = new Biblioteca\Tecnico();
             $programacao = new Biblioteca\Programacao();
             $didatico = new Biblioteca\Didatico();
+            $web = new Biblioteca\web();
 
             // Atribuindo valores aos atributos
             $tecnico->setTitulo("PHP 7");
@@ -46,6 +47,10 @@
             $didatico->setFormato(["digital", "fisico"]);
             $didatico->setDisciplina("Aprendendo PHP");
             $didatico->setNivel(["Intermediário"]);
+        
+            // Imprimindo os valores dos atributos
+            $web->setTitulo("Esta funcionando");
+            $web->setAutor("José da Silva");
         ?>
 
 
@@ -87,6 +92,17 @@
                     <li>Formata Titulo:<em style="color: blue"> <?= $programacao->formataTitulo()?></em></li>
                     <li>Formata Titulo:<em style="color: blue"> <?= $didatico->formataTitulo()?></em></li>
                     <li>Formata Titulo:<em style="color: blue"> <?= $tecnico->formataTitulo()?></em></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li>
+                        <?= $web->formataTitulo()?>
+                    </li>
+                    <li>
+                        <?= $web->formataTitulo()?>
+                    </li>
                 </ul>
             </div>
         </section>
