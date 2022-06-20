@@ -2,7 +2,7 @@
 
 namespace Biblioteca;
 
-require_once 'Tecnico.php';
+// require_once 'Tecnico.php';
 class Programacao extends Tecnico {
     private string $area = "programacao";
     

@@ -16,9 +16,11 @@
 
 
         <?php
-        require_once 'src/Tecnico.php';
-        require_once 'src/Programacao.php';
-        require_once 'src/Didatico.php';
+        // require_once 'src/Tecnico.php';
+        // require_once 'src/Programacao.php';
+        // require_once 'src/Didatico.php';
+
+        require_once realpath("vendor/autoload.php");
 
             $tecnico = new Biblioteca\Tecnico();
             $programacao = new Biblioteca\Programacao();

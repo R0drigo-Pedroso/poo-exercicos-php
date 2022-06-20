@@ -1,7 +1,7 @@
 <?php
 namespace Biblioteca;
 
-require_once 'Livros.php';
+// require_once 'Livros.php';
 
 class Tecnico extends Livros {
     private array $formato = ["digital", "fisico"];
