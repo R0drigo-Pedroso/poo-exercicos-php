@@ -22,12 +22,10 @@
 
         require_once realpath("vendor/autoload.php");
 
-        use Biblioteca\{Tecnico, Programacao, Didatico,web};
-
-            $tecnico = new Tecnico();
-            $programacao = new Programacao();
-            $didatico = new Didatico();
-            $web = new web();
+            $tecnico = new Biblioteca\Tecnico();
+            $programacao = new Biblioteca\Programacao();
+            $didatico = new Biblioteca\Didatico();
+            $web = new Biblioteca\web();
 
             // Atribuindo valores aos atributos
             $tecnico->setTitulo("PHP 7");
@@ -53,7 +51,6 @@
             // Imprimindo os valores dos atributos
             $web->setTitulo("Esta funcionando");
             $web->setAutor("José da Silva");
-            $web->setFormato(["digital", "fisico"]);
         ?>
 
 
@@ -100,9 +97,6 @@
 
             <div>
                 <ul>
-                    <li>
-                        <?= $web->formataTitulo()?>
-                    </li>
                     <li>
                         <?= $web->formataTitulo()?>
                     </li>
