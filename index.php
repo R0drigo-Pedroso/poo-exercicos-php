@@ -53,6 +53,7 @@
             // Imprimindo os valores dos atributos
             $web->setTitulo("Esta funcionando");
             $web->setAutor("José da Silva");
+            $web->setFormato(["digital", "fisico"]);
         ?>
 
 
@@ -99,6 +100,9 @@
 
             <div>
                 <ul>
+                    <li>
+                        <?= $web->formataTitulo()?>
+                    </li>
                     <li>
                         <?= $web->formataTitulo()?>
                     </li>
